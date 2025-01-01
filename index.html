@@ -19,14 +19,15 @@
         <title>Personal Portfolio</title>
         <link rel="stylesheet" href="./dist/style.css">
         <link rel="stylesheet" href="./dist/typing.css">
+        <link rel="stylesheet" href="./dist/animation.css">
         <!-- <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon"> -->
     </head>
 
     <body>
         <main>
-            <aside class="sidebar " data-sidebar>
+            <aside class="sidebar ninja" id = "ninja1"  data-sidebar>
                 <div class="sidebar-info">
-                    <figure class="avatar-box">
+                    <figure style= "border-radius : 50%;" class="avatar-box">
                         <img src="./dist/source/face.svg" alt="avatar" width="80">
                     </figure>
 
@@ -107,7 +108,7 @@
                     </ul>
                 </nav>
 
-                <article class="about active" data-page="about">
+                <article class="about active " data-page="about">
                     <header>
                         <h2 class="h2 article-title">About me</h2>
                     </header>
@@ -158,7 +159,7 @@
                                 <div class="service-content-box">
                                     <h4 class="h4 service-item-title">Data Analysis</h4>
                                     <p class="service-item-text">Good grip on Numpy
-                                        ,Matplotlib,pandas,Tensorflow,Scikitlearn</p>
+                                        ,Matplotlib , pandas , Tensorflow,Scikitlearn</p>
                                 </div>
                             </li>
 
@@ -189,10 +190,7 @@
                                     <h4 class="h4 testimonials-item-title" data-testimonials-title>Badminton</h4>
 
                                     <div class="testimonials-text" data-testimonials-text>
-                                        <p>Richard was hired to create a corporate identity. It's modern, clean and with
-                                            a beautiful design that got a lot of praises from colleagues and visitors.
-                                            We were very pleased with the work done. He has a lot of experience and is
-                                            very concerned about the needs of client.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minima dignissimos quam labore ducimus voluptates totam dolore repellat in. Esse corrupti minus eveniet repudiandae sunt delectus voluptatibus at molestiae ipsa!</p>
                                     </div>
                                 </div>
                             </li>
@@ -207,9 +205,7 @@
                                     <h4 class="h4 testimonials-item-title" data-testimonials-title>Painting</h4>
 
                                     <div class="testimonials-text" data-testimonials-text>
-                                        <p>Working with Richard has been an absolute pleasure. I was impressed with his
-                                            attention to detail, his web design skills and his professional approach to
-                                            our timelines and processes.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolore eveniet blanditiis alias magnam consequuntur nihil voluptatum. Incidunt, iste at quis dolore non est eius, itaque quasi in deserunt voluptatum!</p>
                                     </div>
                                 </div>
                             </li>
@@ -261,14 +257,11 @@
                             </div>
 
                             <div class="modal-content">
-                                <h4 class="h3 modal-title" data-modal-title>Daniel Lewis</h4>
+                                <h4 class="h3 modal-title" data-modal-title></h4>
                                 <time datetime="2023-06-14">14 June, 2023</time>
 
                                 <div class="modal-text" data-modal-text>
-                                    <p>Richard was hired to create a corporate identity. It's modern, clean and with a
-                                        beautiful design that got a lot of praises from colleagues and visitors. We were
-                                        very pleased with the work done. He has a lot of experience and is very
-                                        concerned about the needs of client.</p>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis explicabo accusantium iure velit expedita. Consequuntur hic autem error, iusto, officiis obcaecati harum vero, ipsum veritatis aut et laborum minus dolorem..</p>
                                 </div>
                             </div>
                         </section>
@@ -343,7 +336,7 @@
                         </ol>
                     </section>
                     <!-- experience section start -->
-                    <section class="timeline">
+                    <!-- <section class="timeline">
                         <div class="title-wrapper">
                             <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
 
@@ -375,7 +368,7 @@
                                     applications that enhance user experience.</p>
                             </li>
                         </ol>
-                    </section>
+                    </section> -->
                     <!-- experience section end  -->
                     <section class="skill">
                         <h3 class="h3 skills-title">My Skills</h3>
@@ -427,7 +420,7 @@
                         </ul>
                     </section>
                 </article>
-
+<!-- project start  here  -->
                 <article class="portfolio " data-page="project">
                     <header>
                         <h2 class="h2 article-title">Project</h2>
@@ -436,8 +429,8 @@
                     <section class="projects">
                         <ul class="filter-list">
                             <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
-                            <li class="filter-item"><button data-filter-btn>Web Design</button></li>
-                            <li class="filter-item"><button data-filter-btn>Applications</button></li>
+                            <li class="filter-item"><button data-filter-btn>Geophysics</button></li>
+                            <li class="filter-item"><button data-filter-btn>Data science</button></li>
                             <li class="filter-item"><button data-filter-btn>Web Development</button></li>
                         </ul>
 
@@ -452,30 +445,31 @@
 
                             <ul class="select-list">
                                 <li class="select-item"><button data-select-item>All</button></li>
-                                <li class="select-item"><button data-select-item>Web Design</button></li>
-                                <li class="select-item"><button data-select-item>Applications</button></li>
+                                <li class="select-item"><button data-select-item>Geophysics</button></li>
+                                <li class="select-item"><button data-select-item>Data science</button></li>
                                 <li class="select-item"><button data-select-item>Web Development</button></li>
                             </ul>
                         </div>
 
                         <ul class="project-list">
-                            <li class="project-item active" data-filter-item data-category="web development">
-                                <a href="#">
+                            <!-- project items here  -->
+                            <li class="project-item active" data-filter-item data-category="geophysics">
+                                <a href="https://neon-sorbet-e6928e.netlify.app/">
                                     <figure class="project-img">
                                         <div class="project-item-icon-box">
                                             <ion-icon name="eye-outline"></ion-icon>
                                         </div>
 
-                                        <img src="https://i.postimg.cc/qRHpHMyd/project-1.jpg" alt="finance"
+                                        <img src="./dist/project/pygmt.png" alt="pygmt"
                                             loading="lazy">
                                     </figure>
 
-                                    <h3 class="project-title">Finance</h3>
-                                    <p class="project-category">Web Development</p>
+                                    <h3 class="project-title">Plotting geophysical data with pygmt</h3>
+                                    <p class="project-category">Geophysics</p>
                                 </a>
                             </li>
 
-                            <li class="project-item active" data-filter-item data-category="web development">
+                            <!-- <li class="project-item active" data-filter-item data-category="web development">
                                 <a href="#">
                                     <figure class="project-img">
                                         <div class="project-item-icon-box">
@@ -489,9 +483,9 @@
                                     <h3 class="project-title">Orizon</h3>
                                     <p class="project-category">Web Development</p>
                                 </a>
-                            </li>
+                            </li> -->
 
-                            <li class="project-item active" data-filter-item data-category="web design">
+                            <!-- <li class="project-item active" data-filter-item data-category="web design">
                                 <a href="#">
                                     <figure class="project-img">
                                         <div class="project-item-icon-box">
@@ -505,9 +499,9 @@
                                     <h3 class="project-title">Fundo</h3>
                                     <p class="project-category">Web Design</p>
                                 </a>
-                            </li>
+                            </li> -->
 
-                            <li class="project-item active" data-filter-item data-category="applications">
+                            <!-- <li class="project-item active" data-filter-item data-category="applications">
                                 <a href="#">
                                     <figure class="project-img">
                                         <div class="project-item-icon-box">
@@ -521,9 +515,9 @@
                                     <h3 class="project-title">Brawlhalla</h3>
                                     <p class="project-category">Applications</p>
                                 </a>
-                            </li>
+                            </li> -->
 
-                            <li class="project-item active" data-filter-item data-category="web design">
+                            <!-- <li class="project-item active" data-filter-item data-category="web design">
                                 <a href="#">
                                     <figure class="project-img">
                                         <div class="project-item-icon-box">
@@ -537,9 +531,9 @@
                                     <h3 class="project-title">DSM.</h3>
                                     <p class="project-category">Web Design</p>
                                 </a>
-                            </li>
+                            </li> -->
 
-                            <li class="project-item active" data-filter-item data-category="web design">
+                            <!-- <li class="project-item active" data-filter-item data-category="web design">
                                 <a href="#">
                                     <figure class="project-img">
                                         <div class="project-item-icon-box">
@@ -553,9 +547,9 @@
                                     <h3 class="project-title">Metaspark</h3>
                                     <p class="project-category">Web Design</p>
                                 </a>
-                            </li>
+                            </li> -->
 
-                            <li class="project-item active" data-filter-item data-category="web development">
+                            <!-- <li class="project-item active" data-filter-item data-category="web development">
                                 <a href="#">
                                     <figure class="project-img">
                                         <div class="project-item-icon-box">
@@ -569,9 +563,9 @@
                                     <h3 class="project-title">Summary</h3>
                                     <p class="project-category">Web Development</p>
                                 </a>
-                            </li>
+                            </li> -->
 
-                            <li class="project-item active" data-filter-item data-category="applications">
+                            <!-- <li class="project-item active" data-filter-item data-category="applications">
                                 <a href="#">
                                     <figure class="project-img">
                                         <div class="project-item-icon-box">
@@ -585,9 +579,9 @@
                                     <h3 class="project-title">Task Manager</h3>
                                     <p class="project-category">Applications</p>
                                 </a>
-                            </li>
+                            </li> -->
 
-                            <li class="project-item active" data-filter-item data-category="web development">
+                            <!-- <li class="project-item active" data-filter-item data-category="web development">
                                 <a href="#">
                                     <figure class="project-img">
                                         <div class="project-item-icon-box">
@@ -601,7 +595,7 @@
                                     <h3 class="project-title">Arrival</h3>
                                     <p class="project-category">Web Development</p>
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </section>
                 </article>

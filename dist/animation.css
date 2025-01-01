@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Space%20Grotesk:700|Space%20Grotesk:400');
+
+:root {
+/*  change this for scaling  */
+  --m: 4rem;
+  
+  --red: #2A004E;
+  --pink: #2A004E;
+  --purple: #2A004E;
+  --blue: #b51b19;
+  --green: #2A004E;
+  --yellow: #2A004E;
+  --orange: #2A004E;
+  
+}
+/* body {
+  background-color: #141516;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+} */
+
+.ninja {
+  border: calc(0.07 * var(--m)) solid transparent;
+  /* border-color: #030303; */
+  /* position: relative; */
+  /* color: #F3F3F3; */
+  /* font-family: 'Space Grotesk'; */
+  /* font-size: var(--m); */
+  border-radius: calc(0.4 * var(--m));
+  /* padding: calc(0.5 * var(--m)) calc(1 * var(--m)); */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* cursor: pointer; */
+  
+  /* background:linear-gradient(#2A004E, #121213), linear-gradient(to top left,  #121213 0%, rgba(30, 30, 110, 0.6) 80%, rgba(18, 18, 19, 0)),  linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red)); */
+  /* background-origin: border-box;
+  background-clip: padding-box, border-box, border-box;
+  background-size: 200%;
+  animation: animate 4s infinite ease-in-out; */
+  
+  
+}
+#ninja1{
+    background:linear-gradient(#2A004E, #121213), linear-gradient(to top left,  #121213 0%, rgba(30, 30, 110, 0.6) 80%, rgba(18, 18, 19, 0)),  linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+    background-origin: border-box;
+  background-clip: padding-box, border-box, border-box;
+  background-size: 200%;
+  animation: animate 4s infinite ease-in-out;
+  
+}
+#ninja2{
+    background:linear-gradient(#2A004E, #121213), linear-gradient(to top right,  #121213 0%, rgba(30, 30, 110, 0.6) 80%, rgba(18, 18, 19, 0)),  linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+    background-origin: border-box;
+    background-clip: padding-box, border-box, border-box;
+  background-size: 200%;
+  animation: animate2 4s infinite ease-in-out;
+}
+#ninja1::before {
+  content: '';
+  background: linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 2%;
+  bottom: -20%;
+  z-index: -5;
+  background-size: 200%;
+  animation: animate 4s infinite ease-in-out;
+  filter: blur(calc(0.8 * var(--m)));
+}
+#ninja2::before {
+    content: '';
+    background: linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 2%;
+    bottom: -20%;
+    z-index: -5;
+    background-size: 200%;
+    animation: animate2 4s infinite ease-in-out;
+    filter: blur(calc(0.8 * var(--m)));
+  }
+
+/* button:hover, button:hover::before {
+  animation: animate 0.5s infinite linear;
+} */
+
+@keyframes animate {
+  0% {background-position: 0}
+  100% {background-position: 200%}
+}
+@keyframes animate2 {
+    0% {background-position: 200%}
+    100% {background-position: 0}
+  }
+
+/* @media screen and (max-width: 1000px) {
+  :root {
+    --m: 2rem;
+  }
+} */

@@ -3,8 +3,9 @@ const text = document.querySelector('.typing-text');
 
 // make a words array
 const words = [
-  "Geophysist",
+  "Geophysicist",
   "Web Developer",
+  "Data Scientist",
 ];
 
 // start typing effect
