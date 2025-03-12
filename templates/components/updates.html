@@ -1,0 +1,31 @@
+<article class="blog " data-page="resource">
+    <header>
+        <h2 class="h2 article-title">Resource</h2>
+    </header>
+
+    <section class="blog-posts">
+        <ul class="blog-posts-list">
+            {% for i in index %}
+            <li class="blog-post-item">
+                <a href={{section[i]['redirect']}}>
+                    <figure class="blog-banner-box">
+                        <img src="{{section[i]['image']}}"
+                            alt="Design conferences in 2024" loading="lazy">
+                    </figure>
+
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <p class="blog-category">{{section[i]['catagory']}}</p>
+                            <span class="dot"></span>
+                            <time datetime="2024-02-23">{{section[i]['date']}}</time>
+                        </div>
+
+                        <h3 class="h3 blog-item-title">{{section[i]['title']}}</h3>
+                        <p class="blog-text">{{section[i]['description']}}</p>
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</article>

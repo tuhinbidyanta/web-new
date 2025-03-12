@@ -6,11 +6,11 @@
     /* --bg-gradient-jet: linear-gradient(to bottom right, hsla(240, 1%, 18%, .251) 3%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%); */
     --bg-gradient-jet:linear-gradient(#2A004E, #121213);
     /* --bg-gradient-yellow1: linear-gradient(to bottom right, hsl(45, 100%, 71%) 0%, hsla(36, 100%, 69%, 0) 50%); */
-    --bg-gradient-yellow1: linear-gradient(to bottom right, #C62300, hsla(36, 100%, 69%, 0) 50%);
-    --bg-gradient-yellow2: linear-gradient(135deg, hsla(45, 100%, 71%, .251) 0%, hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
+    --bg-gradient-yellow1: linear-gradient(to bottom right, #af00c6, hsla(36, 100%, 69%, 0) 50%);
+    --bg-gradient-yellow2: linear-gradient(135deg, hsla(286, 100%, 71%, 0.251) 0%, hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
     --border-gradient-onyx: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
     /* --text-gradient-yellow: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%)); */
-    --text-gradient-yellow: linear-gradient(to right, #f96d31, #C62300);
+    --text-gradient-yellow: linear-gradient(to right, #f931ce, #8e00c6);
 
     --jet: hsl(0, 0%, 22%);
     /* --onyx: hsl(240, 1%, 17%); */
@@ -24,9 +24,9 @@
     --white1: hsl(0, 0%, 100%);
     --white2: hsl(0, 0%, 98%);
     /* --orange-yellow-crayola: hsl(45, 100%, 72%); */
-    --orange-yellow-crayola: #f98857;
+    --orange-yellow-crayola: #f157f9;
     /* --vegas-gold: #F14A00; */
-    --vegas-gold: #f98857;
+    --vegas-gold: #f957ce;
     --light-gray: hsl(0, 0%, 84%);
     --light-gray70: hsla(0, 0%, 84%, .7);
     --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -1360,18 +1360,29 @@ textarea.form-input {
     }
 
     .navbar {
-        position: absolute;
-        bottom: auto;
+        display:flex;
+        justify-items: center; 
+        align-items: center;
+        position: fixed;
+        height: 7%;
+        width :100%;
+        /* bottom: auto; */
         top: 0;
         left: auto;
         right: 0;
-        width: max-content;
-        border-radius: 0 20px;
+        /* margin-bottom:10px; */
+        /* width: max-content; */
+        border-radius: 0;
         padding: 0 20px;
-        box-shadow: none;
+        /* box-shadow: none; */
+    }
+    .extra{
+        width:70px
     }
 
     .navbar-list {
+        display:flex;
+        justify-items: center; 
         gap: 30px;
         padding: 0 20px;
     }
@@ -1430,7 +1441,7 @@ textarea.form-input {
 
     .sidebar {
         position: sticky;
-        top: 60px;
+        top: 15px;
         max-height: max-content;
         height: 100%;
         margin-bottom: 0;

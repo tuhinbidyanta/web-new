@@ -1,0 +1,56 @@
+<article class="portfolio " data-page="project">
+    <header>
+        <h2 class="h2 article-title">Project</h2>
+    </header>
+
+    <section class="projects">
+        <ul class="filter-list">
+            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>Geophysics</button></li>
+            <li class="filter-item"><button data-filter-btn>Data science</button></li>
+            <li class="filter-item"><button data-filter-btn>Web Development</button></li>
+        </ul>
+
+        <div class="filter-select-box">
+            <button class="filter-select " data-select>
+                <div class="select-value" data-select-value>Select Category</div>
+
+                <div class="select-icon">
+                    <ion-icon name="chevron-down"></ion-icon>
+                </div>
+            </button>
+
+            <ul class="select-list">
+                <li class="select-item"><button data-select-item>All</button></li>
+                <li class="select-item"><button data-select-item>Geophysics</button></li>
+                <li class="select-item"><button data-select-item>Data science</button></li>
+                <li class="select-item"><button data-select-item>Web Development</button></li>
+            </ul>
+        </div>
+
+        <ul class="project-list">
+            <!-- pygmt  -->
+            <!-- project items here  -->
+             {% for i in count_project %}
+            <li class="project-item active" data-filter-item data-category="{{project[i]['catagory'][0]}}">
+                <a href="{{project[i]['redirect']}}" target = '_blank'>
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+
+                        <img src=" {{project[i]['image']}}" alt="..."
+                            loading="lazy">
+                    </figure>
+
+                    <h3 class="project-title"> {{project[i]['title']}}</h3>
+                    <p class="project-category"> {{project[i]['catagory'][1]}}</p>
+                    <p style="color:white;"> {{project[i]['description']}}</p>
+
+                </a>
+            </li>
+            {% endfor %}
+            
+        </ul>
+    </section>
+</article>

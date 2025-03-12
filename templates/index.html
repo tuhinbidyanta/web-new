@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tuhin Bidyanta</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="../static/css/typing.css">
+        <link rel="stylesheet" href="../static/css/animation.css">
+        <!-- <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon"> -->
+    </head>
+
+    <body>
+        <main >
+            <nav class="navbar">
+                
+                <ul class="navbar-list">
+                    
+                    <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Project</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Resource</button></li> 
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+                </ul>
+            </nav>
+            
+            
+            {% include './components/slidebar.html' %}
+
+            <div class="main-content">
+                
+
+                {% include './components/about.html' %}
+
+                
+                <!-- resume page -->
+                {% include './components/resume.html' %}
+                <!-- project start  here  -->
+                {% include './components/project.html' %}
+                <!-- blog post content -->
+                {% include './components/updates.html' %}
+                <!-- blog post content  -->
+
+                <!-- contact -->
+                {% include './components/contact.html' %}
+            </div>
+        </main>
+
+        <script src="main.js"></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+
+    </html>
+    <!-- partial -->
+    <script src="../static/js/script.js"></script>
+    <script src="../static/js/typing.js"></script>
+
+</body>
+
+</html>
